@@ -1,0 +1,7 @@
+data("women")
+head(women)
+breaks <- quantile(women$height, probs = seq(0, 1, length.out = 4), na.rm = TRUE)
+print(breaks)
+labels <- c("Short", "Medium", "Tall")
+women$height_category <- cut(women$height, breaks = breaks, labels = labels, include.lowest = TRUE)
+print(women)

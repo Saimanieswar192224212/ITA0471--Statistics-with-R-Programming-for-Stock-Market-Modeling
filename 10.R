@@ -1,0 +1,5 @@
+data<-c(23, 4, 56, 21, 34, 56, 73)
+minmum<-min(data)
+mas<-max(data)
+print(minmum)
+print(mas)
